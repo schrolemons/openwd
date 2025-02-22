@@ -1223,7 +1223,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #7e11ed;
+    background: #0d0d0b;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2724,10 +2724,11 @@ header.header {
   }
 }
 body {
-  background-image: url("/images/background.jpg");
+  background: url("/images/background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-position: center;
 }
 @media only screen and (max-width: 600px) {
   body {
