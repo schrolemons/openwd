@@ -1252,7 +1252,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #c1d967;
+    background: #5277ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2910,6 +2910,20 @@ body {
 }
 .popup {
   opacity: 0.8;
+}
+.links-of-recent-posts {
+  font-size: 1.1125em;
+  margin-top: 10px;
+}
+.links-of-recent-posts-title {
+  font-size: 1.03em;
+  font-weight: 600;
+  margin-top: 0;
+}
+.links-of-recent-posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /*相册主页面*/
 .photos-page {
