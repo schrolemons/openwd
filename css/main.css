@@ -1252,7 +1252,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #7dd2ff;
+    background: #2eeec2;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1549,7 +1549,6 @@ pre code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
 }
 .links-of-blogroll-item {
   max-width: calc(100% - 20px);
@@ -2912,7 +2911,7 @@ body {
   opacity: 0.8;
 }
 .links-of-recent-posts {
-  font-size: 1.1125em;
+  font-size: 0.8725em;
   margin-top: 10px;
 }
 .links-of-recent-posts-title {
