@@ -1252,7 +1252,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #8809d1;
+    background: #ffbd01;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2925,7 +2925,7 @@ body {
   opacity: 0.8;
 }
 .links-of-recent-posts {
-  font-size: 0.8725em;
+  font-size: 1em;
   margin-top: 10px;
 }
 .links-of-recent-posts-title {
