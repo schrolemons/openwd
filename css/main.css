@@ -1252,7 +1252,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #1b949c;
+    background: #8e0dff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2937,6 +2937,16 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
 }
 /*相册主页面*/
 .photos-page {
