@@ -22,6 +22,16 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"world.sch-nie.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
     <meta name="description" content="九虹一系，琼明。空中散落着小雪。但那墨黑所点染的亮色，使这一切显得尤为失序。那是金属质的地板，也是唯余的风景。没有人可以斩断黑白，直到他走到这生死之间。“交出所有文明的答案，否则视为叛离。”这里是一切的终端，一切的旅途从这里发源，也汇聚于此。这里是分发文明的观测塔，也是剥夺一切尘世之锁的牢铐。这里是文明塔的建设之地，也是下发生命的终末之地。领航者们调整着世界的参数，以谋求最大的收益。混沌与虚无扭转">
 <meta property="og:type" content="article">
 <meta property="og:title" content="落日与风：重返故都">
@@ -56,7 +66,6 @@
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
-
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
 
@@ -365,7 +374,7 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E9%A3%8E/" rel="tag"># 风</a>
+              <a href="/tags/%E9%A3%8E/" rel="tag">  风</a>
           </div>
 
         
@@ -377,8 +386,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/10.html" rel="next" title="冰海艺术">
-                  冰海艺术 <i class="fa fa-angle-right"></i>
+                <a href="/posts/20.html" rel="next" title="破实之冰：神子之树（旧版）">
+                  破实之冰：神子之树（旧版） <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -396,6 +405,9 @@
 
 </div>
   </main>
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+  <script type="text/javascript" src="/js/src/fireworks.js"></script>
 
   <footer class="footer">
     <div class="footer-inner">
