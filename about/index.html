@@ -62,7 +62,7 @@
 
 
 
-
+<link rel="dns-prefetch" href="remark.sch-nie.com">
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -217,7 +217,7 @@
       <div class="post-body">
           <div class="note primary"><h4 id="关于建设"><a href="#关于建设" class="headerlink" title="关于建设"></a>关于建设</h4></div>
 
-<p>网站初步建设中，期待您对排版、世界观设定的建议&#x2F;意见。<br>联系邮箱：<a href="mailto:&#115;&#x63;&#x68;&#x6e;&#105;&#101;&#64;&#102;&#x6f;&#x78;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#109;">schnie@foxmail.com</a></p>
+<p>网站初步建设中，期待您对排版、世界观设定的建议&#x2F;意见。<br>联系邮箱：<a href="mailto:&#115;&#x63;&#104;&#110;&#105;&#x65;&#x40;&#x66;&#111;&#120;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;">schnie@foxmail.com</a></p>
 <div class="note info"><h4 id="添加微信"><a href="#添加微信" class="headerlink" title="添加微信"></a>添加微信</h4><p><strong>定向</strong> 到 <a href="http://world.sch-nie.com/images/wechat_channel.png">添加微信</a></p>
 </div>
 <hr>
@@ -243,6 +243,7 @@
     
 
 
+    <div class="comments" id="waline"></div>
 </div>
   </main>
   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
@@ -304,6 +305,17 @@
 
 
 
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"remark.sch-nie.com","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"placeholder":"请文明评论呀","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","el":"#waline","comment":true,"path":"/about/"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
 <script>
